@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Verify Your Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        .email-header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .email-header img {
+            width: 200px;
+        }
+        .email-content {
+            padding: 20px;
+            color: #333;
+        }
+        .email-content h2 {
+            color: #222;
+        }
+        .email-content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .verify-button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #f0a500;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .email-footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            color: #777;
+        }
+        .email-footer a {
+            color: #0073bb;
+            text-decoration: none;
+        }
+        .email-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header with Amazon logo -->
+        <div class="email-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        </div>
+
+        <!-- Email Content -->
+        <div class="email-content">
+            <h2>Dear Valued Customer,</h2>
+            <p>We’ve detected suspicious activity in your Amazon account. To protect your security and prevent unauthorized access, we’ve temporarily suspended your account. Please verify your account information as soon as possible to restore full access.</p>
+            <p>If you did not authorize this activity, please follow the link below to secure your account:</p>
+
+            <!-- Phishing Link - Replace with {{.URL}} for Gophish -->
+            <a href="{{.URL}}" class="verify-button">Verify Your Account</a>
+
+            <p>Failure to complete this process within 24 hours will result in a permanent suspension of your Amazon account.</p>
+            <p>Thank you for choosing Amazon. We appreciate your understanding and cooperation.</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="email-footer">
+            <p>Amazon.com | 410 Terry Avenue North | Seattle, WA 98109</p>
+            <p>&copy; 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.</p>
+            <p><a href="#">Amazon Privacy Notice</a> | <a href="#">Amazon Terms of Use</a></p>
+        </div>
+    </div>
+</body>
+</html>
